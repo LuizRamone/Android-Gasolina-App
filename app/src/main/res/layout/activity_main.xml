@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94BD31"
+    tools:context="com.example.luiz.alcoolougasolina.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="81dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/precoGasolinaId"
+        android:layout_marginTop="4dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textoResultadoId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="            Preço Álcool"
+        android:textColor="#415C00"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço Gasolina"
+        android:layout_marginStart="24dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textoResultadoId"
+        android:layout_marginTop="152dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="151dp"
+        app:layout_constraintLeft_toLeftOf="@+id/precoGasolinaId"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        android:layout_marginLeft="24dp" />
+
+    <EditText
+        android:id="@+id/precoAlcoolId"
+        android:layout_width="135dp"
+        android:layout_height="0dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:paddingLeft="45dp"
+        android:paddingRight="25dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/botaoVerificarId"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:layout_marginLeft="14dp" />
+
+    <EditText
+        android:id="@+id/precoGasolinaId"
+        android:layout_width="148dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="28dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:paddingLeft="45dp"
+        android:paddingRight="25dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/precoAlcoolId"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/botaoVerificarId"
+        android:layout_width="198dp"
+        android:layout_height="52dp"
+        android:text="@string/textoBotaoVerificar"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textoResultadoId"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="57dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="58dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textoResultadoId"
+        android:layout_width="251dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="189dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginStart="56dp"
+        android:paddingHorizontal="50dp"
+        android:textColor="#415C00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_editor_absoluteY="295dp" />
+</android.support.constraint.ConstraintLayout>
